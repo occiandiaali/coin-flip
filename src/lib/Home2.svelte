@@ -203,6 +203,7 @@
 <script>
   import { onMount } from "svelte";
   import * as THREE from "three";
+  import {link} from 'svelte-spa-router'
 
   let outcome1 = "Heads";
   let outcome2 = "Tails";
@@ -385,7 +386,9 @@
       <div class="fade-text">{fadeText}</div>
     {/if}
   </div>
+  
   <div class="inputs">
+   <a href="/about" use:link>About</a>
     <label for="heads">Heads outcome:</label>
     <input bind:value={outcome1} id="heads"/>
     <label for="tails">Tails outcome:</label>

@@ -93,9 +93,11 @@
   import Router from "svelte-spa-router";
  // import Home from "./lib/Home.svelte"
   import Home2 from "./lib/Home2.svelte";
+  import About from "./lib/About.svelte";
 
   const routes = {
-    "/": wrap({ component: Home2 })
+    "/": wrap({ component: Home2 }),
+    "/about": wrap({component: About})
   };
 </script>
 
