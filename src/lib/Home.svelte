@@ -324,6 +324,7 @@
     opacity: 0;
     animation: fadeUp 2s forwards;
     pointer-events: none;
+    z-index: 300;
   }
   @keyframes fadeUp {
     0% {
