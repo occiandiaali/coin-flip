@@ -42,7 +42,7 @@
   @media (max-width: 768px) {
     .nav-div {
       top: 2%;
-      left: 15%;
+      left: 20%;
       z-index: 130;
     }
   }

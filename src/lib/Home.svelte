@@ -378,11 +378,11 @@
         left: 3%;
     }
     .info-span {
-        left: 8%;
+        left: 10%;
         top: 86%;
     }
     input {
-      width: 274px;
+      width: 280px;
     }
     /* .nav-div {
       top: 2%;
