@@ -363,24 +363,6 @@
     left: 30%;
     color: plum;
   }
-  /* .nav-div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 180px;
-    height: 32px;
-    padding: 6px;
-    margin: 6px;
-    border-radius: 4px;
-    position: fixed;
-    top: 5%;
-    left: 70%;
-    background-color: rgb(110, 78, 141);
-  }
-  .nav-div a {
-    color: white;
-    text-decoration: none;
-  } */
 
   @media (max-width: 768px) {
     .layout {
@@ -391,8 +373,9 @@
     }
     .coin-wrapper {
         height: 60vh;
-        width: 334px;
+        min-width: 340px;
         background-color: black;
+        left: 3%;
     }
     .info-span {
         left: 8%;
