@@ -308,6 +308,7 @@
   .coin-wrapper {
     position: relative;
     background: #111;
+
   }
   .coin {
     width: 100%;
@@ -356,25 +357,53 @@
   }
   .info-span {
     font-size: small;
-    font-family: cursive, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 3%;
     left: 30%;
     color: plum;
   }
+  /* .nav-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 32px;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 4px;
+    position: fixed;
+    top: 5%;
+    left: 70%;
+    background-color: rgb(110, 78, 141);
+  }
+  .nav-div a {
+    color: white;
+    text-decoration: none;
+  } */
+
   @media (max-width: 768px) {
     .layout {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
 
-      width: 328px;
+      width: 324px;
     }
     .coin-wrapper {
-        height: 100%;
+        height: 60vh;
+        background-color: black;
     }
     .info-span {
-        left: 5%;
+        left: 8%;
+        top: 86%;
     }
+    input {
+      width: 274px;
+    }
+    /* .nav-div {
+      top: 2%;
+      left: 15%;
+    } */
   }
 </style>
 
@@ -388,7 +417,10 @@
   </div>
   
   <div class="inputs">
-   <a href="/about" use:link>About</a>
+   <!-- <div class="nav-div">
+    <a href="/about" use:link>About</a>
+    <a href="/learn" use:link>Learn</a>
+   </div> -->
     <label for="heads">Heads outcome:</label>
     <input bind:value={outcome1} id="heads"/>
     <label for="tails">Tails outcome:</label>
@@ -397,9 +429,9 @@
         <img src="/coin-logo.svg" alt="coin-flip" width="48" height="48" />
         Result: {result}
     </div>
-    <div style="margin: 8px;border:1px solid red;padding: 6px">
+    <div style="margin: 8px;padding: 6px">
         <img src="/sign-warn.svg" alt="disclaimer" width="16" height="16" />
-        <span style="font-size: xx-small;">Disclaimer: This is purely for entertainment purposes. Use at your discretion.</span>
+        <span style="font-size: xx-small;">Disclaimer: This is purely for entertainment purposes.</span>
     </div>
   </div>
 </div>
