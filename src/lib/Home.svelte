@@ -391,6 +391,7 @@
     }
     .coin-wrapper {
         height: 60vh;
+        width: 100%;
         background-color: black;
     }
     .info-span {
