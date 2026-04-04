@@ -5,11 +5,13 @@
   import Home from "./lib/Home.svelte";
   import About from "./lib/About.svelte";
   import Learn from "./lib/Learn.svelte";
+  import Policy from "./lib/Policy.svelte";
 
   const routes = {
     "/": wrap({ component: Home }),
     "/about": wrap({component: About}),
-    "/learn": wrap({component: Learn})
+    "/learn": wrap({component: Learn}),
+    "/policy": wrap({component: Policy})
   };
 </script>
 
@@ -39,11 +41,14 @@
     color: white;
     text-decoration: none;
   }
+
+
   @media (max-width: 768px) {
     .nav-div {
       top: 2%;
       left: 20%;
       z-index: 130;
     }
+
   }
 </style>
