@@ -122,7 +122,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
-    font-family: cursive, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
     opacity: 0;
     animation: fadeUp 2s forwards;
