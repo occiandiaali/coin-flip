@@ -219,7 +219,7 @@
     </div>
     <div style="margin: 8px;padding: 6px">
         <img src="/sign-warn.svg" alt="disclaimer" width="16" height="16" />
-        <span style="font-size: xx-small;">Disclaimer: This is purely for entertainment purposes.</span>
+        <span style="font-size: xx-small;">Disclaimer: Do not base serious, life-decisions on a coin flip.</span>
     </div>
     <a href="/policy" style="font-size: small;" use:link>Terms & Conditions</a>
   </div>
