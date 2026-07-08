@@ -3,11 +3,16 @@
   import { link } from "svelte-spa-router";
   import * as THREE from "three";
 
+  import gwd from "../assets/gwd.png"
+  import milli from "../assets/millionaireodds.png"
+
   let outcome1 = "Heads";
   let outcome2 = "Tails";
   let result = "";
 
+  /** @type any */
   let container;
+  /** @type any */
   let scene, camera, renderer, coin;
   let animating = false;
 
@@ -105,16 +110,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    height: 100vh;
+    height: auto;
+
+background: #660291;
+background: linear-gradient(90deg, #660291, #DFCCFF);
   }
   .coin-wrapper {
     position: relative;
     background: #111;
-
   }
   .coin {
     width: 100%;
     height: 100%;
+  }
+    #coin-label {
+    position: absolute;
+   top: 54%;
+   left: 40%; 
   }
   .fade-text {
     position: absolute;
@@ -148,6 +160,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+    /*  */
+  }
+  .result, label {
+    color: wheat;
   }
   input {
     margin-bottom: 1rem;
@@ -168,25 +184,52 @@
     color: plum;
   }
 
+ .ad-content-div {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6x;
+        color: rgb(92, 45, 45);
+        margin: 15% auto;
+      }
+  .ad-content-div span {
+    font-size: small;
+  } 
+  
+
+
   @media (max-width: 768px) {
     .layout {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
-
-      width: 324px;
+      /* height: auto; */
+      /* width: 324px; */
+    
     }
     .coin-wrapper {
-        height: 60vh;
-        min-width: 340px;
+        /* height: 60vh;
+        min-width: 340px; */
+                height: 50vh;
         background-color: black;
-        left: 3%;
+        /* left: 3%; */
+        
+    }
+        #coin-label {
+font-size: small;
+   left: 36%; 
+  }
+    .result, label {
+      color: #111;
     }
     .info-span {
-        left: 10%;
+        left: 15%;
         top: 86%;
     }
     input {
-      width: 280px;
+      width: 260px;
     }
     /* .nav-div {
       top: 2%;
@@ -199,28 +242,66 @@
   <div class="coin-wrapper">
     <span class="info-span">Tap the screen or swipe the coin to flip</span>
     <div class="coin" bind:this={container}></div>
+    <span id="coin-label">Your lucky coin</span>
     {#if showText}
       <div class="fade-text">{fadeText}</div>
     {/if}
   </div>
-  
+                <div class="ad-content-div">
+        <span>ADVERTISEMENT</span>
+        <img
+          src={milli}
+          alt="millionaireodds"
+          width="260px"
+          height="42px"
+        />
+        <span>Are you going to be a Millionaire or Billionaire?</span>
+        <span
+          >VISIT
+          <a
+            href="https://millionaireodds.com/"
+            target="_blank"
+            style="color: black"
+            >https://millionaireodds.com</a
+          ></span
+        >
+      </div>
   <div class="inputs">
    <!-- <div class="nav-div">
     <a href="/about" use:link>About</a>
     <a href="/learn" use:link>Learn</a>
    </div> -->
-    <label for="heads">Heads outcome:</label>
+    <label for="heads">Heads outcome</label>
     <input bind:value={outcome1} id="heads"/>
-    <label for="tails">Tails outcome:</label>
+    <label for="tails">Tails outcome</label>
     <input bind:value={outcome2} id="tails"/>
     <div class="result">
         <img src="/coin-logo.svg" alt="coin-flip" width="48" height="48" />
-        Result: {result}
+        Result: {result || '--'}
     </div>
-    <div style="margin: 8px;padding: 6px">
-        <img src="/sign-warn.svg" alt="disclaimer" width="16" height="16" />
-        <span style="font-size: xx-small;">Disclaimer: Do not base serious, life-decisions on a coin flip.</span>
-    </div>
-    <a href="/policy" style="font-size: small;" use:link>Terms & Conditions</a>
   </div>
+            <div class="ad-content-div">
+        <span>ADVERTISEMENT</span>
+        <img
+          src={gwd}
+          alt="guesswhodaily"
+          width="260px"
+          height="42px"
+        />
+        <span>Your daily celebrity puzzle</span>
+        <span
+          >VISIT
+          <a
+            href="https://guesswhodaily.online/"
+            target="_blank"
+            style="color: black"
+            >https://guesswhodaily.online</a
+          ></span
+        >
+      </div>
+<a href="/policy" style="font-size: small;color:wheat" use:link>Terms & Conditions</a>
+          <div style="margin: 8px;padding: 6px">
+        <img src="/sign-warn.svg" alt="disclaimer" width="16" height="16" />
+        <span style="font-size: xx-small;color:blue">This website is purely for entertainment purposes ONLY.</span>
+    </div>
 </div>

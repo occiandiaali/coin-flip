@@ -1,5 +1,7 @@
 <script>
 import { link } from "svelte-spa-router";
+import milli from "../assets/millionaireodds.png"
+import gwd from "../assets/gwd.png"
 
     function testSubmit(e) {
         e.preventDefault();
@@ -7,6 +9,7 @@ import { link } from "svelte-spa-router";
     }
 </script>
 
+<div id="wrap">
  <div id="about-div">
    
     <h1>About</h1>
@@ -22,25 +25,70 @@ import { link } from "svelte-spa-router";
     <p>Use the default Heads or Tails, or input your own parameters that you want to choose between, and just..flip.</p>
 </div>
 <hr/>
+              <div class="ad-content-div">
+        <span>ADVERTISEMENT</span>
+        <img
+          src={milli}
+          alt="millionaireodds"
+          width="260px"
+          height="42px"
+        />
+        <span>Are you going to be a Millionaire or Billionaire?</span>
+        <span
+          >VISIT
+          <a
+            href="https://millionaireodds.com/"
+            target="_blank"
+            style="color: black"
+            >https://millionaireodds.com</a
+          ></span
+        >
+      </div><hr/>
 <div id="contact-div">
-    <h2>Get in touch</h2>
+    <h2>Feedback</h2>
     <form onsubmit={testSubmit}>
         <input type="email" placeholder="Your email address" />
         <textarea placeholder="Enter your comment or question.." rows="3" cols="24"></textarea>
         <input type="submit" value="Send" id="submit" />
     </form>
 </div>
-<a href="/policy" use:link>Terms & Conditions</a>
+          <div class="ad-content-div">
+        <span>ADVERTISEMENT</span>
+        <img
+          src={gwd}
+          alt="guesswhodaily"
+          width="260px"
+          height="42px"
+        />
+        <span>Your daily celebrity puzzle</span>
+        <span
+          >VISIT
+          <a
+            href="https://guesswhodaily.online/"
+            target="_blank"
+            style="color: black"
+            >https://guesswhodaily.online</a
+          ></span
+        >
+      </div>
+      <hr/>
+<a href="/policy" use:link style="color: white;">Terms & Conditions</a>
 
 <div style="margin: 6px;padding: 2px">
     <img src="/sign-warn.svg" alt="disclaimer" width="16" height="16" />
-    <span style="font-size: xx-small;">Disclaimer: We strongly advise that you do not make serious, life-decisions based on a coin flip.</span>
+    <span style="font-size: xx-small;">This website is purely for entertainment purposes.</span>
+</div>
+
 </div>
  <style>
-    #about-div {
-        
+ #wrap {
+
+background: #660291;
+background: linear-gradient(0deg, #660291, #DFCCFF);
+color: black;
         padding: 6px;
-    }
+ }
+
     #contact-div form {
         display: flex;
         flex-direction: column;
@@ -61,6 +109,19 @@ import { link } from "svelte-spa-router";
         padding: 8px;
         margin: 4px;
     }
+     .ad-content-div {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6x;
+        color: rgb(179, 175, 175);
+      }
+  .ad-content-div span {
+    font-size: small;
+  }  
     @media (max-width:600px) {
         #about-div {
             margin-top:25%;

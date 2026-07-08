@@ -1,7 +1,30 @@
-<script></script>
+<script>
+      import gwd from "../assets/gwd.png"
+  import milli from "../assets/millionaireodds.png"
+</script>
 
+<div id="learn-wrap">
 <div class="learnDiv">
-    <h1>Learn about Coin flips</h1>
+              <div class="ad-content-div">
+        <span>ADVERTISEMENT</span>
+        <img
+          src={milli}
+          alt="millionaireodds"
+          width="260px"
+          height="42px"
+        />
+        <span>Are you going to be a Millionaire or Billionaire?</span>
+        <span
+          >VISIT
+          <a
+            href="https://millionaireodds.com/"
+            target="_blank"
+            style="color: black"
+            >https://millionaireodds.com</a
+          ></span
+        >
+      </div>
+    <h1>More about Coin flips</h1>
     
     <ul>
         <li>
@@ -18,13 +41,60 @@
 
 </div>
 
+<hr/>
+          <div class="ad-content-div">
+        <span>ADVERTISEMENT</span>
+        <img
+          src={gwd}
+          alt="guesswhodaily"
+          width="260px"
+          height="42px"
+        />
+        <span>Your daily celebrity puzzle</span>
+        <span
+          >VISIT
+          <a
+            href="https://guesswhodaily.online/"
+            target="_blank"
+            style="color: black"
+            >https://guesswhodaily.online</a
+          ></span
+        >
+      </div>
+</div>
 <style>
+ #learn-wrap {
+height: 100vh;
+background: #660291;
+background: linear-gradient(0deg, #660291, #DFCCFF);
+color: black;
+        padding: 6px;
+ }
 .learnDiv {
     margin-top: 5%;
 }
 li {
-    list-style-type: none;
+    list-style-type:decimal-leading-zero;
+    /* list-style-type: disc; */
+    width: 96%;
+    border: 1px solid rgb(173, 172, 172);
+    padding: 6px;
+    margin: 4px;
+    
 }
+ .ad-content-div {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6x;
+        color: white
+      }
+  .ad-content-div span {
+    font-size: small;
+  } 
   @media (max-width: 600px) {
       .learnDiv {
           margin-top: 20%;

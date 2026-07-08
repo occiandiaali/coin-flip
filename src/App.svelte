@@ -16,8 +16,8 @@
 </script>
 
    <div class="nav-div">
-   <a href="/" use:link>Home</a>
-    <a href="/about" use:link>About</a>
+   <a href="/" use:link>FlipCoin</a> <span style="color: wheat;margin:0 3px">|</span> 
+    <a href="/about" use:link>About</a> <span style="color: wheat;margin:0 3px">|</span> 
     <a href="/learn" use:link>Learn</a>
    </div>
 <Router {routes} />
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 180px;
+    width: 200px;
     height: 32px;
     padding: 6px;
     margin: 6px;
@@ -46,7 +46,7 @@
   @media (max-width: 768px) {
     .nav-div {
       top: 2%;
-      left: 20%;
+      left: 15%;
       z-index: 130;
     }
 
