@@ -34,7 +34,7 @@
     border-radius: 4px;
     position: fixed;
     top: 5%;
-    left: 68%;
+    left: 60%;
     background-color: rgb(110, 78, 141);
   }
   .nav-div a {

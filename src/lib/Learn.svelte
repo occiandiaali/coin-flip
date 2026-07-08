@@ -1,6 +1,6 @@
 <script>
-      import gwd from "../assets/gwd.png"
   import milli from "../assets/millionaireodds.png"
+  import clocktool from "../assets/clocktoolkit.png"
 </script>
 
 <div id="learn-wrap">
@@ -8,19 +8,19 @@
               <div class="ad-content-div">
         <span>ADVERTISEMENT</span>
         <img
-          src={milli}
-          alt="millionaireodds"
+          src={clocktool}
+          alt="clocktoolkit"
           width="260px"
           height="42px"
         />
-        <span>Are you going to be a Millionaire or Billionaire?</span>
+        <span>Your personal time toolkit</span>
         <span
           >VISIT
           <a
-            href="https://millionaireodds.com/"
+            href="https://clocktoolkit.pages.dev/"
             target="_blank"
             style="color: black"
-            >https://millionaireodds.com</a
+            >https://clocktoolkit.pages.dev/</a
           ></span
         >
       </div>
@@ -45,19 +45,19 @@
           <div class="ad-content-div">
         <span>ADVERTISEMENT</span>
         <img
-          src={gwd}
-          alt="guesswhodaily"
+          src={milli}
+          alt="millionaireodds"
           width="260px"
           height="42px"
         />
-        <span>Your daily celebrity puzzle</span>
+        <span>Could you be a Millionaire, or more?</span>
         <span
           >VISIT
           <a
-            href="https://guesswhodaily.online/"
+            href="https://millionaireodds.com/"
             target="_blank"
             style="color: black"
-            >https://guesswhodaily.online</a
+            >https://millionaireodds.com</a
           ></span
         >
       </div>

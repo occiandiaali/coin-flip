@@ -5,6 +5,7 @@
 
   import gwd from "../assets/gwd.png"
   import milli from "../assets/millionaireodds.png"
+  import clocktool from "../assets/clocktoolkit.png"
 
   let outcome1 = "Heads";
   let outcome2 = "Tails";
@@ -108,8 +109,8 @@
 <style>
   .layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0.5rem;
     height: auto;
 
 background: #660291;
@@ -171,7 +172,7 @@ background: linear-gradient(90deg, #660291, #DFCCFF);
     font-size: 1rem;
   }
   .result {
-    margin-top: 1rem;
+    margin: 0.4rem auto;
     font-weight: bold;
     font-size: 1.2rem;
   }
@@ -192,14 +193,18 @@ background: linear-gradient(90deg, #660291, #DFCCFF);
         align-items: center;
         justify-content: center;
         border-radius: 6x;
-        color: rgb(92, 45, 45);
-        margin: 15% auto;
+        /* color: rgb(92, 45, 45); */
+        color: wheat;
+        margin: 3% auto;
       }
   .ad-content-div span {
     font-size: small;
   } 
   
 
+  .top-ad-mdscreen {
+    padding-top: 15%;
+  }
 
   @media (max-width: 768px) {
     .layout {
@@ -247,7 +252,7 @@ font-size: small;
       <div class="fade-text">{fadeText}</div>
     {/if}
   </div>
-                <div class="ad-content-div">
+                <div class="ad-content-div top-ad-mdscreen">
         <span>ADVERTISEMENT</span>
         <img
           src={milli}
@@ -267,19 +272,36 @@ font-size: small;
         >
       </div>
   <div class="inputs">
-   <!-- <div class="nav-div">
-    <a href="/about" use:link>About</a>
-    <a href="/learn" use:link>Learn</a>
-   </div> -->
+
+   <div class="result">
+       <img src="/coin-logo.svg" alt="coin-flip" width="48" height="48" />
+       Result: {result || '--'}
+   </div>
     <label for="heads">Heads outcome</label>
     <input bind:value={outcome1} id="heads"/>
     <label for="tails">Tails outcome</label>
     <input bind:value={outcome2} id="tails"/>
-    <div class="result">
-        <img src="/coin-logo.svg" alt="coin-flip" width="48" height="48" />
-        Result: {result || '--'}
-    </div>
   </div>
+
+                  <div class="ad-content-div">
+        <span>ADVERTISEMENT</span>
+        <img
+          src={clocktool}
+          alt="clocktoolkit"
+          width="260px"
+          height="42px"
+        />
+        <span>Your complete time toolkit.</span>
+        <span
+          >VISIT
+          <a
+            href="https://clocktoolkit.pages.dev/"
+            target="_blank"
+            style="color: black"
+            >https://clocktoolkit.pages.dev</a
+          ></span
+        >
+      </div>
             <div class="ad-content-div">
         <span>ADVERTISEMENT</span>
         <img
