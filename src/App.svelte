@@ -27,14 +27,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 200px;
+    width: 220px;
     height: 32px;
     padding: 6px;
     margin: 6px;
     border-radius: 4px;
     position: fixed;
     top: 5%;
-    left: 60%;
+    /* left: 60%; */
+    left: 71%;
     background-color: rgb(110, 78, 141);
   }
   .nav-div a {

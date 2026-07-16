@@ -109,7 +109,8 @@
 <style>
   .layout {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    /* grid-template-columns: 1fr 1.5fr; */
+    grid-template-columns: 1.6fr 1fr;
     gap: 0.5rem;
     height: auto;
 
@@ -121,6 +122,7 @@ background: linear-gradient(90deg, #584f5c, #DFCCFF);
   .coin-wrapper {
     position: relative;
     background: #111;
+    height: 450px;
   }
   .coin {
     width: 100%;
@@ -129,7 +131,7 @@ background: linear-gradient(90deg, #584f5c, #DFCCFF);
     #coin-label {
     position: absolute;
    top: 54%;
-   left: 40%; 
+   left: 42%; 
   }
   .fade-text {
     position: absolute;
@@ -165,7 +167,7 @@ background: linear-gradient(90deg, #584f5c, #DFCCFF);
     padding: 1rem;
     /*  */
   }
-  .result, label {
+  #result-text, label {
     color: wheat;
   }
   input {
@@ -177,13 +179,15 @@ background: linear-gradient(90deg, #584f5c, #DFCCFF);
     margin: 0.4rem auto;
     font-weight: bold;
     font-size: 1.2rem;
+    color: black;
   }
   .info-span {
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 3%;
-    left: 30%;
+    top: 10%;
+    /* left: 30%; */
+    left: 33%;
     color: plum;
   }
 
@@ -195,8 +199,8 @@ background: linear-gradient(90deg, #584f5c, #DFCCFF);
         align-items: center;
         justify-content: center;
         border-radius: 6x;
-        /* color: rgb(92, 45, 45); */
-        color: wheat;
+        color: rgb(92, 45, 45);
+        /* color: wheat; */
         margin: 3% auto;
       }
   .ad-content-div span {
@@ -277,7 +281,7 @@ font-size: small;
 
    <div class="result">
        <img src="/coin-logo.svg" alt="coin-flip" width="48" height="48" />
-       Result: {result || '--'}
+       Result: <span id="result-text">{result || '--'}</span>
    </div>
     <label for="heads">Heads outcome</label>
     <input bind:value={outcome1} id="heads"/>
@@ -323,7 +327,7 @@ font-size: small;
           ></span
         >
       </div>
-<a href="/policy" style="font-size: small;color:wheat" use:link>Terms & Conditions</a>
+<a href="/policy" style="font-size: small;color:grey" use:link>Terms & Conditions</a>
           <div style="margin: 8px;padding: 6px">
         <img src="/sign-warn.svg" alt="disclaimer" width="16" height="16" />
         <span style="font-size: xx-small;color:blue">This website is purely for entertainment purposes ONLY.</span>
