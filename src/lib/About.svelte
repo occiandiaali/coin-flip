@@ -72,7 +72,7 @@ import gwd from "../assets/gwd.png"
         >
       </div>
       <hr/>
-<a href="/policy" use:link style="color: white;">Terms & Conditions</a>
+<a href="/policy" use:link style="color: wheat;">Terms & Conditions</a>
 
 <div style="margin: 6px;padding: 2px">
     <img src="/sign-warn.svg" alt="disclaimer" width="16" height="16" />
