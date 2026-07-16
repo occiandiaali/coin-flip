@@ -113,8 +113,10 @@
     gap: 0.5rem;
     height: auto;
 
-background: #660291;
-background: linear-gradient(90deg, #660291, #DFCCFF);
+/* background: #660291;
+background: linear-gradient(90deg, #660291, #DFCCFF); */
+background: #584f5c;
+background: linear-gradient(90deg, #584f5c, #DFCCFF);
   }
   .coin-wrapper {
     position: relative;

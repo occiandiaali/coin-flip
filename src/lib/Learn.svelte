@@ -24,7 +24,7 @@
           ></span
         >
       </div>
-    <h1>More about Coin flips</h1>
+    <h1>Learn about coin flips</h1>
     
     <ul>
         <li>
@@ -65,8 +65,10 @@
 <style>
  #learn-wrap {
 height: 100vh;
-background: #660291;
-background: linear-gradient(0deg, #660291, #DFCCFF);
+/* background: #660291;
+background: linear-gradient(0deg, #660291, #DFCCFF); */
+background: #584f5c;
+background: linear-gradient(90deg, #584f5c, #DFCCFF);
 color: black;
         padding: 6px;
  }

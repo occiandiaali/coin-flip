@@ -14,13 +14,15 @@
 <style>
  #terms-wrap {
 height: 100vh;
-background: #660291;
-background: linear-gradient(0deg, #660291, #DFCCFF);
+/* background: #660291;
+background: linear-gradient(0deg, #660291, #DFCCFF); */
+background: #584f5c;
+background: linear-gradient(90deg, #584f5c, #DFCCFF);
 color: black;
         padding: 6px;
  }
     #policy-div {
-        margin: 5% auto;
+        margin: 10% auto;
     }
     @media (max-width: 600px) {
         #policy-div {
